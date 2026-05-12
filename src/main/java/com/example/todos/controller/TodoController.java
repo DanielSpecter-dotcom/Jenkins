@@ -52,6 +52,7 @@ public class TodoController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         todoService.delete(id);
+        System.out.println("Xd");
         return ResponseEntity.noContent().build();
     }
 }
